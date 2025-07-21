@@ -7,6 +7,14 @@
     <title>CDP Torrealba</title>
 </head>
 <body>
+    <div id="navbar-container"></div>
+    <script>
+    fetch('./navbar.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('navbar-container').innerHTML = html;
+    });
+    </script>
     <div class="container">
             <h1 class="text-center my-4">Centro Docente Privado "Torrealba"</h1>
         <p class="text-center">Almodóvar del Río</p>
